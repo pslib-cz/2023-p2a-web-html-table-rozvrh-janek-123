@@ -1,11 +1,36 @@
+html
+{
+    --col1: #B35900;
+    --col2: #435359;
+    --col3: #212529;
+    --col4: #82959C;
+
+    --tableBg: rgb(105, 105, 229);
+}
+
 body
 {
     font-size: 1.5rem;
 }
 
+.hidden
+{
+    background-color: transparent;
+    border: none;
+}
+
+.day
+{
+    transform: rotate(270deg);
+}
+
 table
 {
     border-collapse: collapse;
+
+    /* border-spacing: .5em; */
+
+    /* background-color: var(--tableBg); */
 }
  
 th, td
@@ -13,9 +38,16 @@ th, td
     border: black 1px solid;
 }
  
+td
+{
+    /* box-shadow: 1px 1px rgb(129, 129, 129); */
+
+    background-color: white;
+}
+
 th
 {
-    background-color: gray;
+    background-color: var(--col4);
     color: white;
  
     line-height: .2em;
