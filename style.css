@@ -1,16 +1,19 @@
 html
 {
-    --col1: #B35900;
-    --col2: #435359;
-    --col3: #212529;
     --col4: #82959C;
 
-    --tableBg: rgb(105, 105, 229);
+    --tableBg: rgb(228, 228, 255);
+
+    --emptyBg: transparent;
+
+    font-family: sans-serif;
 }
 
 body
 {
     font-size: 1.5rem;
+
+    background-color: var(--tableBg);
 }
 
 .hidden
@@ -24,23 +27,27 @@ body
     transform: rotate(270deg);
 }
 
+thead th
+{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 table
 {
-    border-collapse: collapse;
+    border-spacing: .25em;
 
-    /* border-spacing: .5em; */
-
-    /* background-color: var(--tableBg); */
-}
- 
-th, td
-{
-    border: black 1px solid;
+    margin: auto;
 }
  
 td
 {
-    /* box-shadow: 1px 1px rgb(129, 129, 129); */
+    border: rgba(0, 0, 0, 0.05) 1px solid;
+}
+ 
+td:has(p)
+{
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.314);
 
     background-color: white;
 }
@@ -49,20 +56,20 @@ th
 {
     background-color: var(--col4);
     color: white;
- 
-    line-height: .2em;
 }
  
 tr
 {
     text-align: center;
-    line-height: .2em;
+    line-height: .13em;
 }
  
 .dur
 {
     font-weight: 100;
     font-size: .5em;
+
+    color: rgb(224, 224, 224);
 }
  
 .teacher
